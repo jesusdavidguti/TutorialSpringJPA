@@ -1,0 +1,311 @@
+{
+	"info": {
+		"_postman_id": "0d5e5421-e2ae-4f21-8573-18546643ab02",
+		"name": "Tutorial",
+		"description": "Llamada a api de tutorial para generación de una API-REST con JPA e Hibernate. BB.DD. persona",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/apiPersonas_get_info",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://localhost:8080/apiPersonas/info",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"apiPersonas",
+						"info"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/apiPersonas_put",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{       \r\n        \"id_persona\": 1,    \r\n        \"nombre\": \"Pepe UNO\",\r\n        \"apellido\": \"Gutiérrez Fernández\",\r\n        \"fecNacimiento\": \"1973-07-16T22:00:00.000+00:00\",\r\n        \"eMail\": \"Pepe@gmail.com\",\r\n        \"casado\": true,\r\n        \"divorciado\": false,\r\n        \"peso\": 45.73\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/apiPersonas/personas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"apiPersonas",
+						"personas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/apiPersonas_get",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/apiPersonas/personas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"apiPersonas",
+						"personas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/apiPersonas_get_id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/apiPersonas/personas/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"apiPersonas",
+						"personas",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/apiPersonas_delete_id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/apiPersonas/personas/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"apiPersonas",
+						"personas",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/apiPersonas_post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{       \r\n        \"nombre\": \"Carlos\",\r\n        \"apellido\": \"Gutiérrez Fernández\",\r\n        \"fecNacimiento\": \"1973-07-16T22:00:00.000+00:00\",\r\n        \"eMail\": \"Pepe@gmail.com\",\r\n        \"casado\": true,\r\n        \"divorciado\": false,\r\n        \"peso\": 55.73\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/apiPersonas/personas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"apiPersonas",
+						"personas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get info en Heroku",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "https://personabackend.herokuapp.com/apiPersonas/info",
+					"protocol": "https",
+					"host": [
+						"personabackend",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"apiPersonas",
+						"info"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post en Herolu",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{       \r\n        \"nombre\": \"Carlos\",\r\n        \"apellido\": \"Gutiérrez Fernández\",\r\n        \"fecNacimiento\": \"1973-07-16T22:00:00.000+00:00\",\r\n        \"eMail\": \"Pepe@gmail.com\",\r\n        \"casado\": true,\r\n        \"divorciado\": false,\r\n        \"peso\": 55.73\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://personabackend.herokuapp.com/apiPersonas/personas",
+					"protocol": "https",
+					"host": [
+						"personabackend",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"apiPersonas",
+						"personas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Put en Heroku",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{       \r\n        \"id_persona\": 1,    \r\n        \"nombre\": \"Pepe UNO\",\r\n        \"apellido\": \"Gutiérrez Fernández\",\r\n        \"fecNacimiento\": \"1973-07-16T22:00:00.000+00:00\",\r\n        \"eMail\": \"Pepe@gmail.com\",\r\n        \"casado\": true,\r\n        \"divorciado\": false,\r\n        \"peso\": 45.73\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://personabackend.herokuapp.com/apiPersonas/personas",
+					"protocol": "https",
+					"host": [
+						"personabackend",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"apiPersonas",
+						"personas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get en Herolu",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://personabackend.herokuapp.com/apiPersonas/personas",
+					"protocol": "https",
+					"host": [
+						"personabackend",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"apiPersonas",
+						"personas"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
