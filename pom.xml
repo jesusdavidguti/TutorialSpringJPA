@@ -11,7 +11,7 @@
 	<groupId>com.tutorial</groupId>
 	<artifactId>personaCRUD</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>war</packaging>	
+	<packaging>jar</packaging>	
 	<name>personaCRUD</name>
 	<description>Mantenimiento de datos básicos de una persona</description>
 	<properties>
